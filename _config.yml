@@ -36,7 +36,7 @@ comments: true
 # Note that about_footer should be true if you want
 # to see author information at the bottom of each post
 about_stub: >
-        I'm interested in large-scale computer systems, hardware/system-level security, neuroscience, and foods.
+    Large-scale computer systems, hardware/system-level security, neuroscience, and foods.
     
 
 about_footer: true
