@@ -1,33 +1,30 @@
 # User Settings | Edit there as per required
 
-title: accent
-url: "http://ankitsultana.com"
-baseurl: "/accent"
+title: Dayeol Lee
+url: "http://dayeol.github.io"
+baseurl: ""
 
 # This will show up at the top of index page
 site_heading: >
-    foo <span class="faded">'s blog</span>
+    Dayeol <span class="faded">'s blog</span>
 
-email: your@email.com
-author: yourname
+email: dayeol@berkeley.edu
+author: dayeol
 # This description will show up in google search results
 # (for index page) etc.
 description: >
-    accent is, as Trump would put it, the best
+    Dayeol Lee, Computer Science Ph.D. student, University of California, Berkeley
 
 # This will what will show against &copy; in the footer
-copyright: accent
+copyright: dayeol
 # Toggle your short bio, which will displayed on your index page
 # Just toggle it and run jekyll again to see
-intro: false         # Tip: Remove the span from site_heading if intro is set to true
+intro: true         # Tip: Remove the span from site_heading if intro is set to true
 # This will be displayed in your intro
 short_bio: >
-    Welcome! This is <span>accent</span>, a mobile friendly theme for Jekyll. The main feature of this
-    theme is that you can change the accent color. Refer the
-    <a class="underline different-highlight" href="http://ankitsultana.com/accent/documentation.html">
-        Documentation
-    </a>
-    to know how.
+  I'm a Ph.D. student in Computer Science at <a href="https://adept.eecs.berkeley.edu">ADEPT</a>, <a href="http://berkeley.edu">UC Berkeley</a>.
+        I earned B.S. and M.S. in Computer Science from <a href="http://postech.ac.kr/eng">POSTECH</a>
+
 
 permalink: /:title.html
 
@@ -39,18 +36,19 @@ comments: true
 # Note that about_footer should be true if you want
 # to see author information at the bottom of each post
 about_stub: >
-    Keep this sentence less than 13 words or it won't look good.
+        I'm interested in large-scale computer systems, hardware/system-level security, neuroscience, and foods.
+    
 
 about_footer: true
 
-twitter_username: AnkitSultana
-github_username: yourgithub
-facebook_id: yourusername
+twitter_username: "0xda9e01"
+github_username: dayeol
+facebook_id: dayeolee
 
 favicon: true
 favicon_location: "images/favicon.ico"
 
-profile_picture: images/temp.png
+profile_picture: /images/me.jpg
 paginate: 5
 paginate_path: "/page/:num"
 tracking_id: UA-69243698-7 # GA Tracking ID
