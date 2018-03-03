@@ -14,6 +14,9 @@ body {
     height: 100%;
     overflow: auto;
 }
+.font-color {
+		color: $accent-color;
+}
 .site-name {
     color: $accent-color;
 }
@@ -206,13 +209,15 @@ footer {
 /* Navbar
  * * * * * * * * * * * */
 
+/*
 .navbar {
     margin: auto;
     padding: $base-spacing $base-spacing;
     width: 100%;
     min-height: 70px;
     //background-color: $accent-color;
-}
+}*/
+
 .back-outer {
     text-align: center;
     width: $big-circle-size;
@@ -231,7 +236,7 @@ footer {
     background: #fff;
 }
 .back-inner:hover {
-    background: #000;
+    background: $accent-color;
 }
 
 /* Paginate
@@ -268,7 +273,8 @@ hr {
     font-weight: lighter;
     font-size: 15px;
     color: $light-color;
-    padding: $base-spacing;
+		padding: $base-spacing;
+    padding-top: 0px;
 }
 .copyright {
     color: $accent-color;

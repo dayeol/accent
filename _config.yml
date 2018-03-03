@@ -6,10 +6,10 @@ baseurl: ""
 
 # This will show up at the top of index page
 site_heading: >
-    Dayeol <span class="faded">'s blog</span>
+    <span class="font-color">Dayeol</span> Lee
 
 email: dayeol@berkeley.edu
-author: dayeol
+author: Dayeol Lee
 # This description will show up in google search results
 # (for index page) etc.
 description: >
@@ -26,7 +26,7 @@ short_bio: >
         I earned B.S. and M.S. in Computer Science from <a href="http://postech.ac.kr/eng">POSTECH</a>
 
 
-permalink: /:title.html
+permalink: /blog/:title.html
 
 # Comments are powered by disqus
 comments: true
@@ -45,13 +45,13 @@ twitter_username: "0xda9e01"
 github_username: dayeol
 facebook_id: dayeolee
 
-favicon: true
+favicon: false
 favicon_location: "images/favicon.ico"
 
 profile_picture: /images/me.jpg
 paginate: 5
-paginate_path: "/page/:num"
-tracking_id: UA-69243698-7 # GA Tracking ID
+paginate_path: "/blog/page/:num"
+tracking_id: UA-105695885-1 # GA Tracking ID
 
 # Social Stuff | open graph and twitter cards
 og_image: "images/accent.png" # This will show in facebook thumbnails
@@ -81,12 +81,13 @@ defaults:
             path:   ""
             type:   "pages"
         values:
-            layout: "page"
+            layout: "default"
     -
         scope:
             path:   ""
             type:   "posts"
         values:
             layout: "post"
+            type: "blog"
 
 exclude: [vendor] # For travis ci

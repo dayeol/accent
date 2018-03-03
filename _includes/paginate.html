@@ -6,7 +6,7 @@
             {% assign prev = 'page/' | append: paginator.previous_page %}
         {% endif %}
         <div class="alignable pull-left">
-            <a class="button" href="{{ url | append: prev }}" title="articles new">&larr; Prev</a>
+						<a class="button" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Prev</a>
         </div>
     {% else %}
         <div><a href=""></a></div>
@@ -14,12 +14,14 @@
     <div style="text-align: center;">
         <span>Page {{paginator.page}} of {{paginator.total_pages}}</span>
     </div>
-    {% if paginator.next_page %}
+
+		{% if paginator.next_page %}
         <div class="alignable pull-right" style="text-align: right">
-            <a class="button" href="{{ url | append: 'page/' | append: paginator.next_page }}" title="articles old">Next &rarr;</a>
+						<a class="button" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &rarr;</a>
         </div>
-    {% else %}
+		{% else %}
         <div><a href=""></a></div>
-    {% endif %}
+		{% endif %}
+
 </div>
 {% endif %}
